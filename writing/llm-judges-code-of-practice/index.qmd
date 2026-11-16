@@ -1,14 +1,20 @@
 ---
-title: "Do LLM judges agree with a human when checking safety frameworks against the EU Code of Practice?"
-subtitle: "A small study"
+title: "How stable is an LLM-assisted score of a safety framework?"   # working title
+subtitle: "54 checks against the EU Code of Practice"
 date: 2026-11-25        # set to the real publication date
 categories: [evaluation, measurement, AI governance]
 draft: true             # remove this line to publish
 ---
 
 <!-- Skeleton only: headings and reminders, no content yet. Write it in your own words.
-     Framing (see answers.md): addressed to the field, not to one organisation; no critique of anyone's tools;
-     say plainly what the data does not show. Aim for 1,200-2,000 words. -->
+     Framing: addressed to the field, not to one organisation; no critique of anyone's tools;
+     say plainly what the data does not show. 1,200-1,500 words, 2 tables, 1 figure.
+     Per-document scores only as ranges inside the sensitivity table; no ranking of the labs; no thesis jargon. -->
+
+::: {.callout-note title="Summary"}
+<!-- ~80 words: question; best judge's weighted kappa vs a blind human (interval); run-to-run flip rate;
+     largest score range across reasonable rules; what this does not show. -->
+:::
 
 ## Why I looked at this
 

@@ -33,6 +33,6 @@ If Quarto ever fails with "RangeError: could not deserialize value", delete `.qu
 5. Every later push to `main` republishes the site.
 
 ## Before publishing a post
-- Facts about me only from what is true (the candidacy repo's `data/profile.yaml`).
+- Facts about me only from what is true.
 - Every quote from the Code or a framework checked against the source, with section and retrieval date.
 - Data, code and labels of the study in their own repository, linked from the post.

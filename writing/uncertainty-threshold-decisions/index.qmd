@@ -6,7 +6,7 @@ categories: [AI governance, evaluation, policy]
 draft: true             # remove this line to publish
 ---
 
-<!-- Skeleton only. The policy note (angle B in answers.md), 1-2 pages, in your own words.
+<!-- Skeleton only. A 1-2 page policy note, in your own words.
      Quote the Code and the frameworks exactly, with section numbers; give credit to what they already require. -->
 
 ## The claim
