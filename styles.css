@@ -1,0 +1,17 @@
+/* Small readability tweaks on top of the flatly / darkly themes. */
+main.content {
+  max-width: 760px;
+}
+
+p, li {
+  line-height: 1.65;
+}
+
+blockquote {
+  font-size: 1rem;
+  border-left-width: 3px;
+}
+
+.listing-date {
+  white-space: nowrap;
+}

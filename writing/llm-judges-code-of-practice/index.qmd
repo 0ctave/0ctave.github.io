@@ -1,0 +1,36 @@
+---
+title: "Do LLM judges agree with a human when checking safety frameworks against the EU Code of Practice?"
+subtitle: "A small study"
+date: 2026-11-25        # set to the real publication date
+categories: [evaluation, measurement, AI governance]
+draft: true             # remove this line to publish
+---
+
+<!-- Skeleton only: headings and reminders, no content yet. Write it in your own words.
+     Framing (see answers.md): addressed to the field, not to one organisation; no critique of anyone's tools;
+     say plainly what the data does not show. Aim for 1,200-2,000 words. -->
+
+## Why I looked at this
+
+<!-- 1 short paragraph: the question, and how it connects to your thesis (a pooled score hid per-domain
+     differences; one design choice reordered a ranking). Say that you ran it in November 2026. -->
+
+## What I did
+
+<!-- Documents and Code measures used (with section numbers and retrieval dates), label scale and definitions,
+     judges and runs, how you kept your own labels blind, what was registered before running. -->
+
+## What I found
+
+<!-- Agreement with intervals; run-to-run flips; judge vs judge; per-measure breakdown with honest caveats;
+     whether the verdict changes with the judge, the prompt or how measures are grouped. One or two figures. -->
+
+## What this does not show
+
+<!-- Small n, one human rater (or intra-rater), a few documents, disclosure vs adequacy, etc. -->
+
+## What I would do next
+
+## Data and code
+
+<!-- Link to the study repository: prompts, outputs, labels, provenance (URL, retrieval date, page, quote). -->

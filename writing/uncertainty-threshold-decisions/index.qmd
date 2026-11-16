@@ -1,0 +1,37 @@
+---
+title: "Threshold decisions need their error bars"   # working title, change freely
+subtitle: "A short note on how frontier AI evaluation results are reported"
+date: 2026-11-26        # set to the real publication date
+categories: [AI governance, evaluation, policy]
+draft: true             # remove this line to publish
+---
+
+<!-- Skeleton only. The policy note (angle B in answers.md), 1-2 pages, in your own words.
+     Quote the Code and the frameworks exactly, with section numbers; give credit to what they already require. -->
+
+## The claim
+
+<!-- One or two sentences. -->
+
+## What I saw in my own work
+
+<!-- One number from the thesis (the scorer alone reordered 18 models by up to 15 places) and, if useful,
+     one result from the small study. -->
+
+## What the Code and the frameworks already ask
+
+<!-- Appendix 3.1 and the internal-validity definition; Measure 7.3; how two or three frameworks treat uncertainty.
+     Verify every quote against the source before publishing. -->
+
+## What is missing
+
+<!-- No required reporting of intervals, runs or scoring choices; no stated decision rule at the threshold. -->
+
+## What could be measured from public documents
+
+<!-- A simple indicator: share of threshold-relevant results reported with n, an interval, grader/scorer details,
+     elicitation settings, repeated runs. -->
+
+## What I would ask for
+
+## Limits of this note

@@ -1,0 +1,34 @@
+---
+title: "Octave Boëlle"
+subtitle: "AI evaluation and measurement"
+toc: false
+listing:
+  id: latest
+  contents: "writing/*/index.qmd"
+  sort-ui: false
+  filter-ui: false
+  sort: "date desc"
+  type: table
+  fields: [date, title]
+  max-items: 5
+  feed: true
+---
+
+<!-- Bio adapted from the English LinkedIn "About" text Octave approved on 2026-11-14 (data/linkedin.md).
+     Rewrite it freely in your own words. -->
+
+I taught myself to program in Java, writing Minecraft mods and then a whole server network, long before engineering
+school gave me the theory.
+
+My master's thesis at TU Berlin was about LLM evaluation: what a single global leaderboard can hide when models
+aren't good at the same things. I built the evaluation engine and compared up to 49 models. It also taught me how
+fragile a score can be: in one test, changing nothing but the answer scorer reordered the models.
+
+Alongside that, I've been freelancing since 2021, in development and Linux infrastructure.
+
+[Research](research.qmd) · [GitHub](https://github.com/0ctave) · [LinkedIn](https://www.linkedin.com/in/octave-boelle)
+
+## Latest writing
+
+::: {#latest}
+:::
