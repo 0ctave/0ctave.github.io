@@ -26,9 +26,11 @@ If Quarto ever fails with "RangeError: could not deserialize value", delete `.qu
    git remote add origin git@github.com:0ctave/0ctave.github.io.git
    git push -u origin main
    ```
-3. Wait for the "Publish site" action to finish (it creates the `gh-pages` branch), then in
-   Settings > Pages choose "Deploy from a branch", branch `gh-pages`, folder `/ (root)`.
-4. Every later push to `main` republishes the site.
+3. Quarto's publish action needs an existing `gh-pages` branch: create an empty orphan branch once and push it
+   (done on 2026-11-16), then re-run the "Publish site" action.
+4. Settings > Pages: "Deploy from a branch", branch `gh-pages`, folder `/ (root)` (set on 2026-11-16; GitHub had
+   defaulted to `main`, which serves the raw sources).
+5. Every later push to `main` republishes the site.
 
 ## Before publishing a post
 - Facts about me only from what is true (the candidacy repo's `data/profile.yaml`).
