@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "M.Sc. thesis, Technische Universität Berlin, 2026 (Prof. Odej Kao). Grade 1.3.\nQuestion. When does scoring language models per domain change which model you should use, or which comparison you can trust, compared with one pooled leaderboard?\n\nSelected results\n\nRouting each question to the best model for its domain beat the best single model by +2.67 points (95% CI [+1.46, +3.89], 5,907 items). Most of that gain comes from BBH: without BBH the interval includes zero, and on MMLU-Pro alone one model is best in every category, so there is nothing to route.\nOn BBH, the gain held on a second roster of 342 Open LLM Leaderboard models, on a sealed side read once (+5.25 points, 95% CI [+2.95, +7.55]); a placebo that permutes the subtask labels produced no gain.\nOn MATH, the choice of answer scorer alone reordered 18 models, with rank shifts of up to 15.\nNegative and open results are reported in the record, among them that the embedding taxonomy was not shown better than a simple per-source k-means baseline.\n\nMethod. An evaluation engine in Kotlin with Python analysis tools. Every reported result comes from a test registered before any code or call, with explicit falsifiers and 95% intervals.\nLinks\n\nCode and full record: github.com/0ctave/taxoarena\nThesis (PDF): coming soon"
+  },
+  {
+    "objectID": "research.html#taxoarena-per-domain-llm-evaluation",
+    "href": "research.html#taxoarena-per-domain-llm-evaluation",
+    "title": "Research",
+    "section": "",
+    "text": "M.Sc. thesis, Technische Universität Berlin, 2026 (Prof. Odej Kao). Grade 1.3.\nQuestion. When does scoring language models per domain change which model you should use, or which comparison you can trust, compared with one pooled leaderboard?\n\nSelected results\n\nRouting each question to the best model for its domain beat the best single model by +2.67 points (95% CI [+1.46, +3.89], 5,907 items). Most of that gain comes from BBH: without BBH the interval includes zero, and on MMLU-Pro alone one model is best in every category, so there is nothing to route.\nOn BBH, the gain held on a second roster of 342 Open LLM Leaderboard models, on a sealed side read once (+5.25 points, 95% CI [+2.95, +7.55]); a placebo that permutes the subtask labels produced no gain.\nOn MATH, the choice of answer scorer alone reordered 18 models, with rank shifts of up to 15.\nNegative and open results are reported in the record, among them that the embedding taxonomy was not shown better than a simple per-source k-means baseline.\n\nMethod. An evaluation engine in Kotlin with Python analysis tools. Every reported result comes from a test registered before any code or call, with explicit falsifiers and 95% intervals.\nLinks\n\nCode and full record: github.com/0ctave/taxoarena\nThesis (PDF): coming soon"
+  },
+  {
+    "objectID": "writing/index.html",
+    "href": "writing/index.html",
+    "title": "Writing",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Octave Boëlle",
+    "section": "",
+    "text": "I taught myself to program in Java, writing Minecraft mods and then a whole server network, long before engineering school gave me the theory.\nMy master’s thesis at TU Berlin was about LLM evaluation: what a single global leaderboard can hide when models aren’t good at the same things. I built the evaluation engine and compared up to 49 models. It also taught me how fragile a score can be: in one test, changing nothing but the answer scorer reordered the models.\nAlongside that, I’ve been freelancing since 2021, in development and Linux infrastructure.\nResearch · GitHub · LinkedIn"
+  },
+  {
+    "objectID": "index.html#latest-writing",
+    "href": "index.html#latest-writing",
+    "title": "Octave Boëlle",
+    "section": "Latest writing",
+    "text": "Latest writing\n\n\n\n\nDate\nTitle\n\n\n\n\n\nNo matching items"
+  }
+]
