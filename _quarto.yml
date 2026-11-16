@@ -2,11 +2,21 @@ project:
   type: website
   output-dir: _site
 
+# Design "Paper & Ink" (styles/*.scss), written for this site.
+# Built only on Quarto built-ins: the cosmo Bootswatch theme, the "trestles" about-page template and listings
+# (quarto-cli, MIT licence, https://github.com/quarto-dev/quarto-cli). Fonts from Google Fonts under the
+# SIL Open Font License 1.1: Inter, Source Serif 4, JetBrains Mono. No code copied from personal sites;
+# general ideas only (light navbar on the page background, one accent colour, a lighter accent in dark mode).
+# Accent: the CV blue #004aad (light) and #7aa7ff (dark, 7.5:1 on the dark background).
+
 website:
   title: "Octave Boëlle"
   site-url: "https://0ctave.github.io"
   draft-mode: gone   # posts with draft: true are neither rendered nor listed
   description: "AI evaluation and measurement: writing, research and data."
+  favicon: favicon.svg
+  open-graph: true
+  twitter-card: true
   navbar:
     left:
       - href: index.qmd
@@ -22,19 +32,37 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/octave-boelle
         aria-label: LinkedIn
+  search: false
   page-footer:
-    left: "© 2026 Octave Boëlle"
-    right: "Built with [Quarto](https://quarto.org)"
+    center: "© 2026 Octave Boëlle · Built with [Quarto](https://quarto.org)"
+
+# One date format for every listing and post (e.g. "25 Nov 2026").
+date-format: "D MMM YYYY"
+
+language:
+  listing-page-no-matches: "Nothing published yet."
 
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
-    css: styles.css
+      light: [cosmo, styles/light.scss, styles/base.scss]
+      dark: [cosmo, styles/dark.scss, styles/base.scss]
+    respect-user-color-scheme: true
+    highlight-style:
+      light: a11y-light
+      dark: a11y-dark
+    code-block-border-left: true
+    grid:
+      body-width: 720px
     toc: true
+    toc-title: "On this page"
     smooth-scroll: true
     link-external-newwindow: true
+    link-external-icon: false
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 execute:
   # Analyses run in the study's own repository; posts only show their figures and tables.

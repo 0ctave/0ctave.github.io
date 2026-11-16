@@ -1,21 +1,47 @@
 ---
 title: "Octave Boëlle"
 subtitle: "AI evaluation and measurement"
-toc: false
+# The TOC is hidden (styles/base.scss); it only reserves the same right margin as Research and Writing,
+# so the text column starts at the same left edge on every page.
+toc: true
+body-classes: page-home
+# To add a photo later: put a square image at profile.jpg and uncomment the two lines below.
+# It then shows as a small square to the left of the name (styles/base.scss, "Home hero").
+# image: profile.jpg
+# image-alt: "Portrait of Octave Boëlle"
+about:
+  id: hero
+  template: trestles
+  image-shape: rounded
+  image-width: 13em
+  links:
+    - text: GitHub
+      icon: github
+      href: https://github.com/0ctave
+      rel: me
+      target: _blank
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/octave-boelle
+      rel: me
+      target: _blank
 listing:
   id: latest
   contents: "writing/*/index.qmd"
   sort-ui: false
   filter-ui: false
   sort: "date desc"
-  type: table
+  type: default
   fields: [date, title]
-  max-items: 5
+  categories: false
+  max-items: 3
   feed: true
 ---
 
 <!-- Bio adapted from the English LinkedIn "About" text Octave approved on 2026-11-14 (data/linkedin.md).
      Rewrite it freely in your own words. -->
+
+::: {#hero}
 
 I taught myself to program in Java, writing Minecraft mods and then a whole server network, long before engineering
 school gave me the theory.
@@ -26,7 +52,31 @@ fragile a score can be: in one test, changing nothing but the answer scorer reor
 
 Alongside that, I've been freelancing since 2021, in development and Linux infrastructure.
 
-[Research](research.qmd) · [GitHub](https://github.com/0ctave) · [LinkedIn](https://www.linkedin.com/in/octave-boelle)
+:::
+
+## Selected work
+
+<!-- Every line below is taken from research.qmd; keep the two in sync. -->
+
+::: {.work-item}
+
+[M.Sc. thesis · Technische Universität Berlin · 2026]{.work-meta}
+
+### [TaxoArena: per-domain LLM evaluation](research.qmd)
+
+When does scoring language models per domain change which model you should use, or which comparison you can trust,
+compared with one pooled leaderboard?
+
+::: {.work-tags}
+- Kotlin
+- Python
+- Pre-registered tests
+- 95% intervals
+:::
+
+[[Summary and results](research.qmd) · [Code and full record](https://github.com/0ctave/taxoarena)]{.work-links}
+
+:::
 
 ## Latest writing
 

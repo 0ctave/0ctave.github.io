@@ -1,0 +1,43 @@
+/*-- scss:defaults --*/
+// "Paper & Ink", light. Colours only; fonts and layout live in styles/base.scss.
+// Accent: the CV blue #004aad. Contrast on the paper background: ink 15.1:1, muted 6.0:1, accent 7.8:1
+// (7.2:1 on the card surface); WCAG AA for body text.
+
+$paper:   #fbfaf7;
+$ink:     #1f2328;
+$muted:   #5b6168;
+$accent:  #004aad;
+$rule:    #e5e2da;
+$surface: #f3f1eb;
+
+$body-bg: $paper;
+$body-color: $ink;
+$primary: $accent;
+$secondary: $muted;
+$link-color: $accent;
+$text-muted: $muted;
+$border-color: $rule;
+
+$navbar-bg: $paper;
+$navbar-fg: $muted;
+$navbar-hl: $accent;
+$footer-bg: $paper;
+$footer-fg: $muted;
+
+$code-color: #7a3e12;
+$code-bg: $surface;
+$code-block-bg: $surface;
+$code-block-border-left: $accent;
+$toc-color: $muted;
+
+/*-- scss:rules --*/
+:root {
+  --pi-paper: #{$paper};
+  --pi-ink: #{$ink};
+  --pi-muted: #{$muted};
+  --pi-accent: #{$accent};
+  --pi-rule: #{$rule};
+  --pi-surface: #{$surface};
+  --pi-accent-soft: rgba(0, 74, 173, 0.06);
+  color-scheme: light;
+}

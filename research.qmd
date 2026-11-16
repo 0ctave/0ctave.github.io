@@ -4,15 +4,17 @@ title: "Research"
 
 ## TaxoArena: per-domain LLM evaluation
 
-*M.Sc. thesis, Technische Universität Berlin, 2026 (Prof. Odej Kao). Grade 1.3.*
+[M.Sc. thesis, Technische Universität Berlin, 2026 (Prof. Odej Kao). Grade 1.3.]{.page-meta}
 
+::: {.lede}
 **Question.** When does scoring language models per domain change which model you should use, or which comparison
 you can trust, compared with one pooled leaderboard?
+:::
 
 <!-- Every figure below is quoted from the README summary of github.com/0ctave/taxoarena (2026-11-10 snapshot).
      Keep them in sync with the README if the record changes. -->
 
-**Selected results**
+### Selected results {.section-label}
 
 - Routing each question to the best model for its domain beat the best single model by +2.67 points
   (95% CI [+1.46, +3.89], 5,907 items). Most of that gain comes from BBH: without BBH the interval includes zero,
@@ -23,10 +25,12 @@ you can trust, compared with one pooled leaderboard?
 - Negative and open results are reported in the record, among them that the embedding taxonomy was not shown better
   than a simple per-source k-means baseline.
 
-**Method.** An evaluation engine in Kotlin with Python analysis tools. Every reported result comes from a test
+### Method {.section-label}
+
+An evaluation engine in Kotlin with Python analysis tools. Every reported result comes from a test
 registered before any code or call, with explicit falsifiers and 95% intervals.
 
-**Links**
+### Links {.section-label}
 
 - Code and full record: [github.com/0ctave/taxoarena](https://github.com/0ctave/taxoarena)
 - Thesis (PDF): *coming soon* <!-- TODO: put the PDF in files/ and link it: [Thesis (PDF)](files/thesis.pdf) -->

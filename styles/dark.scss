@@ -1,0 +1,42 @@
+/*-- scss:defaults --*/
+// "Paper & Ink", dark. The CV blue is lightened rather than reused: #7aa7ff on #14171a = 7.5:1
+// (7.0:1 on the card surface #1b1f23). Text #e6e4df is 14.2:1, muted #9aa0a6 6.8:1.
+
+$paper:   #14171a;
+$ink:     #e6e4df;
+$muted:   #9aa0a6;
+$accent:  #7aa7ff;
+$rule:    #2a2f35;
+$surface: #1b1f23;
+
+$body-bg: $paper;
+$body-color: $ink;
+$primary: $accent;
+$secondary: $muted;
+$link-color: $accent;
+$text-muted: $muted;
+$border-color: $rule;
+
+$navbar-bg: $paper;
+$navbar-fg: $muted;
+$navbar-hl: $accent;
+$footer-bg: $paper;
+$footer-fg: $muted;
+
+$code-color: #f0b989;
+$code-bg: $surface;
+$code-block-bg: $surface;
+$code-block-border-left: $accent;
+$toc-color: $muted;
+
+/*-- scss:rules --*/
+:root {
+  --pi-paper: #{$paper};
+  --pi-ink: #{$ink};
+  --pi-muted: #{$muted};
+  --pi-accent: #{$accent};
+  --pi-rule: #{$rule};
+  --pi-surface: #{$surface};
+  --pi-accent-soft: rgba(122, 167, 255, 0.10);
+  color-scheme: dark;
+}
