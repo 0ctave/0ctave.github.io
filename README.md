@@ -4,7 +4,7 @@ Personal site (Quarto), published to https://0ctave.github.io by GitHub Actions.
 
 ## Layout
 - `index.qmd`: home page (short bio + latest writing)
-- `research.qmd`: thesis summary and links (put the thesis PDF in `files/` and link it)
+- `research.qmd`: thesis summary and links; `files/thesis.pdf` is a copy of `docs/thesis/` in TaxoArena
 - `writing/<slug>/index.qmd`: one folder per post; two drafts are prepared:
   - `llm-judges-code-of-practice/`: the small study
   - `uncertainty-threshold-decisions/`: the policy note

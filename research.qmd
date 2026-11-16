@@ -33,4 +33,4 @@ registered before any code or call, with explicit falsifiers and 95% intervals.
 ### Links {.section-label}
 
 - Code and full record: [github.com/0ctave/taxoarena](https://github.com/0ctave/taxoarena)
-- Thesis (PDF): *coming soon* <!-- TODO: put the PDF in files/ and link it: [Thesis (PDF)](files/thesis.pdf) -->
+- [Thesis (PDF, 206 pages)](files/thesis.pdf): *Query-Adaptive Multidimensional Ranking for Agents in Dynamic Domains*
