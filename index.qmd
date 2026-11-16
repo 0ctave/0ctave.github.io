@@ -46,9 +46,10 @@ listing:
 I taught myself to program in Java, writing Minecraft mods and then a whole server network, long before engineering
 school gave me the theory.
 
-My master's thesis at TU Berlin was about LLM evaluation: what a single global leaderboard can hide when models
-aren't good at the same things. I built the evaluation engine and compared up to 49 models. It also taught me how
-fragile a score can be: in one test, changing nothing but the answer scorer reordered the models.
+My master's thesis at TU Berlin was about LLM evaluation, and it ended up being a measurement of an LLM judge: on
+MMLU-Pro, the judge mostly followed which answer was correct and which model was stronger, not the reasoning. I kept
+working on the project after it, up to 49 models on five benchmarks, and it taught me how fragile a score can be: in
+one test, changing nothing but the answer scorer reordered the models.
 
 Alongside that, I've been freelancing since 2021, in development and Linux infrastructure.
 
@@ -60,7 +61,7 @@ Alongside that, I've been freelancing since 2021, in development and Linux infra
 
 ::: {.work-item}
 
-[M.Sc. thesis · Technische Universität Berlin · 2026]{.work-meta}
+[M.Sc. thesis and follow-up · Technische Universität Berlin · 2026]{.work-meta}
 
 ### [TaxoArena: per-domain LLM evaluation](research.qmd)
 

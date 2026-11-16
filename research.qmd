@@ -4,17 +4,34 @@ title: "Research"
 
 ## TaxoArena: per-domain LLM evaluation
 
-[M.Sc. thesis, Technische Universität Berlin, 2026 (Prof. Odej Kao). Grade 1.3.]{.page-meta}
+[M.Sc. thesis, Technische Universität Berlin, August 2026 (Prof. Odej Kao's group). Grade 1.3. Then follow-up work on the same project.]{.page-meta}
 
 ::: {.lede}
 **Question.** When does scoring language models per domain change which model you should use, or which comparison
 you can trust, compared with one pooled leaderboard?
 :::
 
-<!-- Every figure below is quoted from the README summary of github.com/0ctave/taxoarena (2026-11-10 snapshot).
-     Keep them in sync with the README if the record changes. -->
+<!-- Thesis figures are quoted from the thesis abstract (files/thesis.pdf, 2 Aug 2026).
+     Follow-up figures are quoted from the README summary of github.com/0ctave/taxoarena (2026-11-10 snapshot);
+     they are NOT in the thesis PDF. Keep both in sync with their sources. -->
 
-### Selected results {.section-label}
+### The thesis: a measurement of an LLM judge {.section-label}
+
+The thesis ran an LLM-as-a-judge arena inside domain cells of MMLU-Pro, where the answer key is known, so the judge
+itself could be measured.
+
+- The judge's verdicts tracked answer correctness and the strength of the model, not the quality of the reasoning:
+  agreement with the key was 91.1% when the correct model was also the stronger one of the pair, and 56.5% when it was
+  the weaker.
+- Across eight domains and eight models, it recovered the key's ordering on 196 of the 200 model pairs the key can
+  separate.
+- Rubrics written for each domain, compared with a generic prompt on the same comparisons, changed how often the
+  judge abstained (13.0% vs 10.9%), not which model it ranked higher.
+- A pre-registered negative result: finer domain cells did not carry different model rankings.
+
+### Follow-up results {.section-label}
+
+After the thesis, the same engine was extended to more benchmarks and larger model rosters.
 
 - Routing each question to the best model for its domain beat the best single model by +2.67 points
   (95% CI [+1.46, +3.89], 5,907 items). Most of that gain comes from BBH: without BBH the interval includes zero,
@@ -27,8 +44,8 @@ you can trust, compared with one pooled leaderboard?
 
 ### Method {.section-label}
 
-An evaluation engine in Kotlin with Python analysis tools. Every reported result comes from a test
-registered before any code or call, with explicit falsifiers and 95% intervals.
+An evaluation engine in Kotlin with Python analysis tools, running up to 49 models on MMLU-Pro, BBH, SuperGPQA, MATH
+and LiveCodeBench. The main tests are pre-registered, with explicit falsifiers and 95% intervals.
 
 ### Links {.section-label}
 
