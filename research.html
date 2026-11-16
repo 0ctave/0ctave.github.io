@@ -315,7 +315,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#taxoarena-per-domain-llm-evaluation" id="toc-taxoarena-per-domain-llm-evaluation" class="nav-link active" data-scroll-target="#taxoarena-per-domain-llm-evaluation">TaxoArena: per-domain LLM evaluation</a>
   <ul class="collapse">
-  <li><a href="#selected-results" id="toc-selected-results" class="nav-link" data-scroll-target="#selected-results">Selected results</a></li>
+  <li><a href="#the-thesis-a-measurement-of-an-llm-judge" id="toc-the-thesis-a-measurement-of-an-llm-judge" class="nav-link" data-scroll-target="#the-thesis-a-measurement-of-an-llm-judge">The thesis: a measurement of an LLM judge</a></li>
+  <li><a href="#follow-up-results" id="toc-follow-up-results" class="nav-link" data-scroll-target="#follow-up-results">Follow-up results</a></li>
   <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
   <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
   </ul></li>
@@ -347,14 +348,26 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="taxoarena-per-domain-llm-evaluation" class="level2">
 <h2 class="anchored" data-anchor-id="taxoarena-per-domain-llm-evaluation">TaxoArena: per-domain LLM evaluation</h2>
-<p><span class="page-meta">M.Sc. thesis, Technische Universität Berlin, 2026 (Prof.&nbsp;Odej Kao). Grade 1.3.</span></p>
+<p><span class="page-meta">M.Sc. thesis, Technische Universität Berlin, August 2026 (Prof.&nbsp;Odej Kao’s group). Grade 1.3. Then follow-up work on the same project.</span></p>
 <div class="lede">
 <p><strong>Question.</strong> When does scoring language models per domain change which model you should use, or which comparison you can trust, compared with one pooled leaderboard?</p>
 </div>
-<!-- Every figure below is quoted from the README summary of github.com/0ctave/taxoarena (2026-11-10 snapshot).
-     Keep them in sync with the README if the record changes. -->
-<section id="selected-results" class="level3 section-label">
-<h3 class="section-label anchored" data-anchor-id="selected-results">Selected results</h3>
+<!-- Thesis figures are quoted from the thesis abstract (files/thesis.pdf, 2 Aug 2026).
+     Follow-up figures are quoted from the README summary of github.com/0ctave/taxoarena (2026-11-10 snapshot);
+     they are NOT in the thesis PDF. Keep both in sync with their sources. -->
+<section id="the-thesis-a-measurement-of-an-llm-judge" class="level3 section-label">
+<h3 class="section-label anchored" data-anchor-id="the-thesis-a-measurement-of-an-llm-judge">The thesis: a measurement of an LLM judge</h3>
+<p>The thesis ran an LLM-as-a-judge arena inside domain cells of MMLU-Pro, where the answer key is known, so the judge itself could be measured.</p>
+<ul>
+<li>The judge’s verdicts tracked answer correctness and the strength of the model, not the quality of the reasoning: agreement with the key was 91.1% when the correct model was also the stronger one of the pair, and 56.5% when it was the weaker.</li>
+<li>Across eight domains and eight models, it recovered the key’s ordering on 196 of the 200 model pairs the key can separate.</li>
+<li>Rubrics written for each domain, compared with a generic prompt on the same comparisons, changed how often the judge abstained (13.0% vs 10.9%), not which model it ranked higher.</li>
+<li>A pre-registered negative result: finer domain cells did not carry different model rankings.</li>
+</ul>
+</section>
+<section id="follow-up-results" class="level3 section-label">
+<h3 class="section-label anchored" data-anchor-id="follow-up-results">Follow-up results</h3>
+<p>After the thesis, the same engine was extended to more benchmarks and larger model rosters.</p>
 <ul>
 <li>Routing each question to the best model for its domain beat the best single model by +2.67 points (95% CI [+1.46, +3.89], 5,907 items). Most of that gain comes from BBH: without BBH the interval includes zero, and on MMLU-Pro alone one model is best in every category, so there is nothing to route.</li>
 <li>On BBH, the gain held on a second roster of 342 Open LLM Leaderboard models, on a sealed side read once (+5.25 points, 95% CI [+2.95, +7.55]); a placebo that permutes the subtask labels produced no gain.</li>
@@ -364,7 +377,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="method" class="level3 section-label">
 <h3 class="section-label anchored" data-anchor-id="method">Method</h3>
-<p>An evaluation engine in Kotlin with Python analysis tools. Every reported result comes from a test registered before any code or call, with explicit falsifiers and 95% intervals.</p>
+<p>An evaluation engine in Kotlin with Python analysis tools, running up to 49 models on MMLU-Pro, BBH, SuperGPQA, MATH and LiveCodeBench. The main tests are pre-registered, with explicit falsifiers and 95% intervals.</p>
 </section>
 <section id="links" class="level3 section-label">
 <h3 class="section-label anchored" data-anchor-id="links">Links</h3>
